@@ -11,6 +11,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
+    @include breakpoint(medium) {
+      padding: 15px;
+    }
   }
   &__menu {
     display: flex;
@@ -19,6 +22,9 @@
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 50px;
+    @include breakpoint(medium) {
+      flex-direction: column;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -33,15 +39,28 @@
       max-width: 220px;
       &:not(:first-child) {
         margin-left: 35px;
+        @include breakpoint(medium) {
+          margin-left: 0;
+        }
       }
     }
     &-list {
       display: inline-block;
       width: 100%;
+      @include breakpoint(medium) {
+        display: none;
+        &.open {
+          display: inline-block;
+        }
+      }
     }
     &-item {
       padding: 10px 0;
       margin-bottom: 10px;
+      @include breakpoint(medium) {
+        padding: 5px 0;
+        margin-bottom: 5px;
+      }
     }
     &-link {
       color: #6b6b6b;
@@ -49,6 +68,9 @@
       transition: all 0.2s ease;
       &:hover {
         color: rgba(0, 0, 0, 0.85);
+      }
+      @include breakpoint(medium) {
+        font-size: 14px;
       }
     }
   }
@@ -108,6 +130,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      @include breakpoint(medium) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
     }
     &-item {
       margin-right: 15px;
@@ -121,6 +148,14 @@
         background-color: #000;
         right: 0;
         top: 0;
+        @include breakpoint(medium) {
+          display: none;
+        }
+      }
+      @include breakpoint(medium) {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
       }
     }
     &-link {
