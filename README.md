@@ -1,1 +1,1 @@
-# Startup development environment with Gulp 4 and SCSS preprocessor.
+# Starbucks website clone made with HTML/SCSS/JS and GULP 4
