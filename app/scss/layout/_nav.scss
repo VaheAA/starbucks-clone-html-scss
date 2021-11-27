@@ -1,2 +1,56 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 100%;
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 1 100%;
+    text-transform: uppercase;
+    &-item {
+      margin-right: 35px;
+    }
+    &-link {
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      font-size: 15px;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+  &__cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 1 100%;
+    &-item {
+      margin-left: 25px;
+
+      &.marker {
+        .navbar__cta-link {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        img {
+          width: 22px;
+          height: 22px;
+          margin-right: 10px;
+        }
+      }
+    }
+    &-link {
+      transition: all 0.2s ease;
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use 'abstracts' as *;
+
+.title {
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  @include breakpoint(medium) {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+
+  &--sm {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: none;
+    letter-spacing: 1.5px;
+    word-spacing: normal;
+    @include breakpoint(medium) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+}
+.desc {
+  font-size: 22px;
+  font-weight: normal;
+  @include breakpoint(medium) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &--sm {
+    font-size: 18px;
+  }
+}
+.bold {
+  font-weight: bold;
+}

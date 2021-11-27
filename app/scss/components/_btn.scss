@@ -1,0 +1,40 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+
+.btn {
+  background: transparent;
+  border: none;
+  padding: 7px 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-dark {
+  background: #000;
+  color: #fff;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+.btn-light {
+  border: 1px solid #000;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.btn-transparent {
+  border: 1px solid #fff;
+  color: #fff;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+.btn-extra {
+  color: $colorTextLast;
+  border: 1px solid $colorTextLast;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

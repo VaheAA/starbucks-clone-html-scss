@@ -1,0 +1,32 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+
+.hero {
+  background-color: $colorPrimary;
+  color: #fff;
+  &__inner {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    @include breakpoint(small) {
+      padding: 32px;
+      max-width: 100%;
+    }
+  }
+  &__link {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: underline;
+    @include breakpoint(small) {
+      font-size: 18px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

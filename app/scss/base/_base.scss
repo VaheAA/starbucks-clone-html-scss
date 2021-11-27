@@ -1,0 +1,14 @@
+@use 'abstracts' as *;
+
+body {
+  font-family: $font-family;
+  color: #000;
+}
+a,
+button {
+  font-family: inherit;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
