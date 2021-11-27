@@ -43,9 +43,43 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger__line hamburger__line-top"></span>
+          <span class="hamburger__line hamburger__line-middle"></span>
+          <span class="hamburger__line hamburger__line-bottom"></span>
+        </button>
       </div>
     </div>
   </header>
+  <!-- Hamburger -->
+  <div class="mobile__menu hidden" id="menu">
+    <ul class="mobile__menu-list">
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#">Menu
+          <span class="arrow">></span>
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#">Rewards</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#">Gift Cards</a>
+      </li>
+    </ul>
+    <ul class="mobile__menu-cta">
+      <li class="mobile__menu-cta-item">
+        <button class="btn btn-light">Sign in</button>
+      </li>
+      <li class="mobile__menu-cta-item">
+        <button class="btn btn-dark">Join now</button>
+      </li>
+      <li class="mobile__menu-cta-item marker"> <a class="mobile__menu-cta-link" href="#">
+          <img src="./images/marker.svg" alt="marker">
+          <span>Find a store</span>
+        </a>
+      </li>
+    </ul>
+  </div>
   <main class="main">
     <div class="container">
       <div class="hero">
