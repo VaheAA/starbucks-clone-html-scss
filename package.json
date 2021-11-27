@@ -1,0 +1,21 @@
+{
+  "name": "gulp4_boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp 4 boilerplate with SCSS folders structure",
+  "main": "index.js",
+  "author": "vaheAA",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^2.0.0",
+    "sass": "^1.35.2"
+  }
+}
