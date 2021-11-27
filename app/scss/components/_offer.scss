@@ -51,6 +51,7 @@
   }
 }
 .offer-special {
+  padding-bottom: 30px;
   .offer__inner {
     background-color: $colorExtra;
     @include breakpoint(small) {

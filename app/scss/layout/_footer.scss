@@ -1,2 +1,144 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
+
+.footer {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  background-color: #fff;
+  &__inner {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #e5e5e5;
+      left: 0;
+      bottom: 0;
+    }
+
+    &-box {
+      max-width: 220px;
+      &:not(:first-child) {
+        margin-left: 35px;
+      }
+    }
+    &-list {
+      display: inline-block;
+      width: 100%;
+    }
+    &-item {
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+    &-link {
+      color: #6b6b6b;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      &:hover {
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+  }
+  &__links {
+    display: block;
+  }
+  &__social {
+    display: block;
+    margin-bottom: 30px;
+    &-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &-item {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        transition: all 0.2s ease;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__other {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &-item {
+      margin-right: 15px;
+      padding-right: 15px;
+      position: relative;
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #000;
+        right: 0;
+        top: 0;
+      }
+    }
+    &-link {
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: capitalize;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__copyright {
+    display: block;
+    padding-top: 25px;
+    &-text {
+      color: #6b6b6b;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
